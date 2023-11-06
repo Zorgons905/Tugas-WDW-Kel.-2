@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.content-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+table{
+  width: auto;
+  height: auto;
+}
+
+#input{
+  margin-left: 100px;
+}
+#input p{
+  line-height: 30px;
+}
+select{
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.img{
+  margin-bottom: 100px;
+}
+#box1 {
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  background-color: #fffae8;
+  translate: 85px;
+}
+#box2 {
+  position: absolute;
+  width: 15px;
+  height: 80px;
+  background-color: #fffae8;
+  translate: 120px 10px;
+}
+#box3 {
+  position: absolute;
+  width: 15px;
+  height: 80px;
+  background-color: #fffae8;
+  translate: 150px 10px;
+}
+#box4 {
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  background-color: #fffae8;
+  translate: 200px ;
+}
+.hitam{
+  background-color: black;
+  color: black;
+}
+.coklat{
+  background-color: brown;
+  color: brown;
+}
+.merah{
+  background-color: red;
+  color: red;
+}
+.jingga{
+  background-color: orange;
+  color: orange;
+}
+.kuning{
+  background-color: yellow;
+  color: yellow;
+}
+.hijau{
+  background-color: springgreen;
+  color: springgreen;
+}
+.biru{
+  background-color: cyan;
+  color: cyan;
+}
+.ungu{
+  background-color: magenta;
+  color: magenta;
+}
+.kelabu{
+  background-color: gray;
+  color: gray;
+}
+.putih{
+  background-color: white;
+  color: white;
+}
+.emas{
+  background-color: gold;
+  color: gold;
+}
+.perak{
+  background-color: silver;
+  color: silver;
+}

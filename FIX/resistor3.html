@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/resistor3.css">
+  <link rel="website icon" href="img/logo.png" type="png">
+  <script src="js/resistor3.js"></script>
+  <title>Website Kelompok 2</title>
+</head>
+
+<body>
+  <section class="description">
+    <div>
+      <h1>Kalkulator Warna Resistor</h1>
+      <p>Pada pita resistor keenam terdapat indikator <br>batasan suhu yang mampu diterima resistor</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="indikator">
+      <div class="img">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <div id="box6"></div>
+        <img src="img/resistor.png" style="width: 300px; height: 100px;">
+      </div>
+      <div class="hasil">
+        <h2>Hasil:</h2>
+        <p id="resistance" style="position: absolute;"></p>
+      </div>
+    </div>
+
+    <div id="input">
+      <p>Input Pita Pertama</p>
+      <select id="color1" onchange="changeColor()">
+        <option value="" disabled selected>Pilih Warnanya</option>
+        <option class="hitam" value="hitam">Hitam</option>
+        <option class="coklat" value="coklat">Coklat</option>
+        <option class="merah" value="merah">Merah</option>
+        <option class="jingga" value="jingga">Jingga</option>
+        <option class="kuning" value="kuning">Kuning</option>
+        <option class="hijau" value="hijau">Hijau</option>
+        <option class="biru" value="biru">Biru</option>
+        <option class="ungu" value="ungu">Ungu</option>
+        <option class="kelabu" value="kelabu">Kelabu</option>
+        <option class="putih" value="putih">Putih</option>
+      </select>
+      <br>
+      <p>Input Pita Kedua</p>
+      <select id="color2" onchange="changeColor()">
+        <option value="" disabled selected>Pilih Warnanya</option>
+        <option class="hitam" value="hitam">Hitam</option>
+        <option class="coklat" value="coklat">Coklat</option>
+        <option class="merah" value="merah">Merah</option>
+        <option class="jingga" value="jingga">Jingga</option>
+        <option class="kuning" value="kuning">Kuning</option>
+        <option class="hijau" value="hijau">Hijau</option>
+        <option class="biru" value="biru">Biru</option>
+        <option class="ungu" value="ungu">Ungu</option>
+        <option class="kelabu" value="kelabu">Kelabu</option>
+        <option class="putih" value="putih">Putih</option>
+      </select>
+      <br>
+      <p>Input Pita Ketiga</p>
+      <select id="color3" onchange="changeColor()">
+        <option value="" disabled selected>Pilih Warnanya</option>
+        <option class="hitam" value="hitam">Hitam</option>
+        <option class="coklat" value="coklat">Coklat</option>
+        <option class="merah" value="merah">Merah</option>
+        <option class="jingga" value="jingga">Jingga</option>
+        <option class="kuning" value="kuning">Kuning</option>
+        <option class="hijau" value="hijau">Hijau</option>
+        <option class="biru" value="biru">Biru</option>
+        <option class="ungu" value="ungu">Ungu</option>
+        <option class="kelabu" value="kelabu">Kelabu</option>
+        <option class="putih" value="putih">Putih</option>
+        <option class="emas" value="emas">Emas</option>
+        <option class="perak" value="perak">Perak</option>
+      </select>
+      <br>
+      <p>Input Pita Keempat</p>
+      <select id="color4" onchange="changeColor()">
+        <option value="" disabled selected>Pilih Warnanya</option>
+        <option class="hitam" value="hitam">Hitam</option>
+        <option class="coklat" value="coklat">Coklat</option>
+        <option class="merah" value="merah">Merah</option>
+        <option class="jingga" value="jingga">Jingga</option>
+        <option class="kuning" value="kuning">Kuning</option>
+        <option class="hijau" value="hijau">Hijau</option>
+        <option class="biru" value="biru">Biru</option>
+        <option class="ungu" value="ungu">Ungu</option>
+        <option class="kelabu" value="kelabu">Kelabu</option>
+        <option class="putih" value="putih">Putih</option>
+        <option class="emas" value="emas">Emas</option>
+        <option class="perak" value="perak">Perak</option>
+      </select>
+      <br>
+      <p>Input Pita Kelima</p>
+      <select id="color5" onchange="changeColor()">
+        <option value="" disabled selected>Pilih Warnanya</option>
+        <option class="coklat" value="coklat">Coklat</option>
+        <option class="merah" value="merah">Merah</option>
+        <option class="jingga" value="jingga">Jingga</option>
+        <option class="kuning" value="kuning">Kuning</option>
+        <option class="hijau" value="t-hijau">Hijau</option>
+        <option class="biru" value="t-biru">Biru</option>
+        <option class="ungu" value="t-ungu">Ungu</option>
+        <option class="kelabu" value="t-kelabu">Kelabu</option>
+        <option class="emas" value="t-emas">Emas</option>
+        <option class="perak" value="t-perak">Perak</option>
+      </select>
+      <br>
+      <p>Input Pita Keenam</p>
+      <select id="color6" onchange="changeColor()">
+        <option value="" disabled selected>Pilih Warnanya</option>
+        <option class="hitam" value="s-hitam">Hitam</option>
+        <option class="coklat" value="s-coklat">Coklat</option>
+        <option class="merah" value="s-merah">Merah</option>
+        <option class="jingga" value="s-jingga">Jingga</option>
+        <option class="kuning" value="s-kuning">Kuning</option>
+        <option class="hijau" value="s-hijau">Hijau</option>
+        <option class="biru" value="s-biru">Biru</option>
+        <option class="ungu" value="s-ungu">Ungu</option>
+        <option class="kelabu" value="s-kelabu">Kelabu</option>
+      </select>
+      <br>
+      <input id="hitung" type="submit" value="Hitung" onclick="calculateResistance()">
+  </section>
+</body>
+
+</html>
