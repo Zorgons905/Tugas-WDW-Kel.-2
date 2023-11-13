@@ -9,6 +9,9 @@
   <link rel="website icon" href="img/logo.png" type="png">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <title>Website Kelompok 2</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -36,9 +39,9 @@
     </div>
     <div class="home-text">
       <h1>Apa itu <em>Electronize</em> ?</h1>
-      <p>There are many variations passages of Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Consectetur est in perferendis deserunt iure libero ratione, veniam, minima incidunt nisi quibusdam
-        adipisci beatae omnis a placeat atque unde commodi aspernatur?</p>
+      <p>Electronize adalah sebuah website atau alat yang digunakan untuk menentukan nilai resistansi suatu resistor
+        dengan menafsirkan pita warna yang biasanya ditemukan pada badan resistor.
+      </p>
     </div>
 
   </section>
@@ -51,9 +54,9 @@
     <div class="about-text">
       <span>About Us</span>
       <h2>Siapa Kami ?</h2>
-      <p>There are many variations passages of Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Consectetur est in perferendis deserunt iure libero ratione, veniam, minima incidunt nisi quibusdam
-        adipisci beatae omnis a placeat atque unde commodi aspernatur?</p>
+      <p>Perkenalkan kami dari kelompok 2 yang beranggotakan Nanda, Nayla, dan Zaky. 
+        Kami membuat Electronize untuk memudahkan proses penghitungan nilai resistor 
+        sesuai dengan pita yang tercantum pada resistor tersebut</p>
       <a href="#" class="btn">Learn More</a>
     </div>
     <div class="about-img">
@@ -65,35 +68,53 @@
     <div class="heading">
       <span>Pilihan Menu</span>
       <h2>Kumpulan Kalkulator</h2>
+      <br>
+      <br>
     </div>
     <div class="menu-container">
-      <div class="box">
-        <div class="box-img">
-          <img src="img/resistor1.png">
+
+        <div class="box" onclick="loadLocalFile('resistor.html')">
+          <div class="box-img">
+            <img src="img/resistor1.png">
+          </div>
+          <h2>Resistor Pita 4</h2>
         </div>
-        <h2>Resistor Pita 4</h2>
-      </div>
-      <div class="box">
-        <div class="box-img">
-          <img src="img/resistor2.png">
+      
+        <div class="box" onclick="loadLocalFile('resistor2.html')">
+          <div class="box-img">
+            <img src="img/resistor2.png">
+          </div>
+          <h2>Resistor Pita 5</h2>
         </div>
-        <h2>Resistor Pita 5</h2>
-      </div>
-      <div class="box">
-        <div class="box-img">
-          <img src="img/resistor3.png">
+
+        <div class="box" onclick="loadLocalFile('resistor3.html')">
+          <div class="box-img">
+            <img src="img/resistor3.png">
+          </div>
+          <h2>Resistor Pita 6</h2>
         </div>
-        <h2>Resistor Pita 6</h2>
-      </div>
+
     </div>
   </section>
 
   <section class="display">
     <h2>Tampilan</h2>
-    <div class="ifr-container">
-      <iframe id="I1" src="FIX/resistor2.html"></iframe>
+    <div class="ifr-container" id="div3">
+      <iframe id="I1" src=""></iframe>
     </div>
   </section>
+
+  <script>
+    function loadLocalFile(fileName) {
+      var localFilePath = 'http://localhost/desain_web/project/FIX/' + fileName;
+      var iframe = $('#I1');
+
+iframe.fadeOut(300, function() {
+  iframe.attr('src', localFilePath);
+  iframe.fadeIn(300);
+});
+    }
+  </script>
 
   <section id="contact">
     <div class="footer">
