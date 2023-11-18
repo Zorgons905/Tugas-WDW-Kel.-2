@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="css/flyingIn.css">
   <link rel="website icon" href="img/logo.png" type="png">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <title>Website Kelompok 2</title>
@@ -35,9 +36,9 @@
 
   <section class="home" id="home">
     <div class="home-img">
-      <img src="img/pcb.png">
+      <img class="flyinganimated" src="img/pcb.png">
     </div>
-    <div class="home-text">
+    <div class="home-text fade-in-text1">
       <h1>Apa itu <em>Electronize</em> ?</h1>
       <p>Electronize adalah sebuah website atau alat yang digunakan untuk menentukan nilai resistansi suatu resistor
         dengan menafsirkan pita warna yang biasanya ditemukan pada badan resistor.
@@ -73,28 +74,59 @@
     </div>
     <div class="menu-container">
 
-        <div class="box" onclick="loadLocalFile('resistor.html')">
-          <div class="box-img">
-            <img src="img/resistor1.png">
+        <div id="gambar" onclick="applyEffect()">
+          <div class="box" onclick="loadLocalFile('resistor.html')">
+            <div class="box-img">
+              <img src="img/resistor1.png">
+            </div>
+            <h2>Resistor Pita 4</h2>
           </div>
-          <h2>Resistor Pita 4</h2>
         </div>
       
-        <div class="box" onclick="loadLocalFile('resistor2.html')">
-          <div class="box-img">
-            <img src="img/resistor2.png">
+        <div id="gambar2" onclick="applyEffect2()">
+          <div class="box" onclick="loadLocalFile('resistor2.html')">
+            <div class="box-img">
+              <img src="img/resistor2.png">
+            </div>
+            <h2>Resistor Pita 5</h2>
           </div>
-          <h2>Resistor Pita 5</h2>
         </div>
 
-        <div class="box" onclick="loadLocalFile('resistor3.html')">
-          <div class="box-img">
-            <img src="img/resistor3.png">
+        <div id="gambar3" onclick="applyEffect3()">
+          <div class="box" onclick="loadLocalFile('resistor3.html')">
+            <div class="box-img">
+              <img src="img/resistor3.png">
+            </div>
+            <h2>Resistor Pita 6</h2>
           </div>
-          <h2>Resistor Pita 6</h2>
         </div>
 
     </div>
+
+    <script>
+      function applyEffect() {
+        var img = document.getElementById("gambar");
+        img.classList.add("clicked"); // Menambahkan kelas "clicked" untuk menerapkan efek
+        setTimeout(function() {
+          img.classList.remove("clicked"); // Menghapus kelas "clicked" setelah 0.3 detik
+        }, 300);
+      }
+      function applyEffect2() {
+        var img = document.getElementById("gambar2");
+        img.classList.add("clicked"); // Menambahkan kelas "clicked" untuk menerapkan efek
+        setTimeout(function() {
+          img.classList.remove("clicked"); // Menghapus kelas "clicked" setelah 0.3 detik
+        }, 300);
+      }
+      function applyEffect3() {
+        var img = document.getElementById("gambar3");
+        img.classList.add("clicked"); // Menambahkan kelas "clicked" untuk menerapkan efek
+        setTimeout(function() {
+          img.classList.remove("clicked"); // Menghapus kelas "clicked" setelah 0.3 detik
+        }, 300);
+      }
+    </script>
+
   </section>
 
   <section class="display">
@@ -106,7 +138,7 @@
 
   <script>
     function loadLocalFile(fileName) {
-      var localFilePath = 'FIX/' + fileName;
+      var localFilePath = 'http://localhost/desain_web/project/FIX/' + fileName;
       var iframe = $('#I1');
 
 iframe.fadeOut(300, function() {

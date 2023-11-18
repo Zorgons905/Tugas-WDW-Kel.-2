@@ -1,0 +1,53 @@
+.flyingcontainer {
+    position: relative;
+    width: 100%; /* Sesuaikan ukuran container dengan gambar */
+    height: 100%; /* Sesuaikan ukuran container dengan gambar */
+    overflow: hidden;
+  }
+  
+  .flyinganimated {
+    opacity: 0;
+    position: absolute;
+    top: 100%; /* Atur posisi gambar di luar container */
+    animation: fadeInUp 2s forwards, flyIn 2s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes flyIn {
+    from {
+      top: 100%; /* Atur posisi awal gambar di luar container */
+    }
+    to {
+      top: 10%; /* Atur posisi gambar di dalam container */
+    }
+  }
+
+  .fade-in-text1 {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ 
+  .clicked {
+    transform: scale(1.2); /* Perbesar gambar */
+    transition: transform 0.3s; /* Animasi perubahan ukuran */
+  }
+  
