@@ -13,16 +13,11 @@
 
 <body>
   <section class="description">
-    <div>
-      <h1>Kalkulator Warna Resistor</h1>
-      <p>Pada pita resistor ketiga adalah tambahan ketelitian, agar Ohm dapat 3 digit lebih teliti,<br>
-        pita keempat = pita ketiga resistor 4 pita, pita kelima = pita keempat resistor 4 pita
-      </p>
-    </div>
   </section>
 
   <section class="content-section">
     <div class="indikator">
+      <h1 style="text-align: center; margin-bottom: 50px;">Kalkulator Warna <br> Resistor Pita 5</h1>
       <div class="img">
         <div id="box1"></div>
         <div id="box2"></div>
@@ -33,7 +28,7 @@
       </div>
       <div class="hasil">
         <h2>Hasil:</h2>
-        <p id="resistance" style="position: absolute;"></p>
+        <p id="resistance"></p>
       </div>
     </div>
 
@@ -81,8 +76,6 @@
         <option class="ungu" value="ungu">Ungu</option>
         <option class="kelabu" value="kelabu">Kelabu</option>
         <option class="putih" value="putih">Putih</option>
-        <option class="emas" value="emas">Emas</option>
-        <option class="perak" value="perak">Perak</option>
       </select>
       <br>
       <p>Input Pita Keempat</p>
@@ -118,6 +111,7 @@
       </select>
       <br>
       <input id="hitung" type="submit" value="Hitung" onclick="calculateResistance()">
+      <input id="reset" type="submit" value="Reset" onclick="resetInput()">
   </section>
 </body>
 

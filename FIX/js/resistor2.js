@@ -98,3 +98,23 @@ function changeColor() {
     box4.style.backgroundImage = colors[color4];
     box5.style.backgroundImage = colors[color5];
 }
+
+function resetInput() {
+    var color1 = document.getElementById("color1");
+    color1.selectedIndex = 0;
+    var color2 = document.getElementById("color2");
+    color2.selectedIndex = 0;
+    var color3 = document.getElementById("color3");
+    color3.selectedIndex = 0;
+    var color4 = document.getElementById("color4");
+    color4.selectedIndex = 0;
+    var color5 = document.getElementById("color5");
+    color5.selectedIndex = 0;
+
+    document.getElementById("box1").style.backgroundImage = "linear-gradient(to top, #fffae8, #fffae8)";
+    document.getElementById("box2").style.backgroundImage = "linear-gradient(to top, #fffae8, #fffae8)";
+    document.getElementById("box3").style.backgroundImage = "linear-gradient(to top, #fffae8, #fffae8)";
+    document.getElementById("box4").style.backgroundImage = "linear-gradient(to top, #fffae8, #fffae8)";
+    document.getElementById("box5").style.backgroundImage = "linear-gradient(to top, #fffae8, #fffae8)";
+    document.getElementById("resistance").innerHTML = "";
+}

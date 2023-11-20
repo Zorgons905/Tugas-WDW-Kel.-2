@@ -13,17 +13,11 @@
 
 <body>
   <section class="description">
-    <div>
-      <h1>Kalkulator Warna Resistor</h1>
-      <p>Pada Resistor 4 pita, pita 1 dan 2 bertinddak sebagai digit ohmnya, sedangkan pada pita ke 3 sebagai
-      multiplier/pengalinya yang merupakan 10 pangkat ... dari nilai set yang ada pada warna-warna di resistor, Terakhir
-      pada pita keempat ia berfungsi sebagai nilai toleransi(persentase tambahan/kurangan besaran ohm) yang terjadi
-      ketika resistor ditancapkan</p>
-    </div>
   </section>
 
   <section class="content-section">
     <div class="indikator">
+      <h1 style="text-align: center; margin-bottom: 50px;">Kalkulator Warna <br> Resistor Pita 4</h1>
       <div class="img">
         <div id="box1"></div>
         <div id="box2"></div>
@@ -33,7 +27,7 @@
       </div>
       <div class="hasil">
         <h2>Hasil:</h2>
-        <p id="resistance" style="position: absolute;"></p>
+        <p id="resistance"></p>
       </div>
     </div>
 
@@ -101,6 +95,7 @@
       </select>
       <br>
       <input id="hitung" type="submit" value="Hitung" onclick="calculateResistance()">
+      <input id="reset" type="submit" value="Reset" onclick="resetInput()">
   </section>
 </body>
 
