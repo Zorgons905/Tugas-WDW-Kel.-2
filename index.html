@@ -5,10 +5,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/flyingIn.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <link rel="website icon" href="img/logo.png" type="png">
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <title>Website Kelompok 2</title>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -24,10 +25,12 @@
           <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
         </svg>
       </label>
-      <h1 class="logo"><img src="img/logo.png" width="30px" height="30px"><em><a href="#">Electronize</a></em></h1>
+      <h1 class="logo"><img src="img/logo.png" width="30px" height="30px"><em><a href="index.html">Electronize</a></em>
+      </h1>
       <ul class="links">
         <li><strong><a href="#home">Home</a></strong></li>
         <li><strong><a href="#about">About Us</a></strong></li>
+        <li><strong><a href="#history">FYI</a></strong></li>
         <li><strong><a href="#menu">Our Products</a></strong></li>
         <li><strong><a href="#contact">Contact</a></strong></li>
       </ul>
@@ -38,13 +41,12 @@
     <div class="home-img">
       <img class="flyinganimated" src="img/pcb.png">
     </div>
-    <div class="home-text fade-in-text1">
+    <div class="home-text">
       <h1>Apa itu <em>Electronize</em> ?</h1>
       <p>Electronize adalah sebuah website atau alat yang digunakan untuk menentukan nilai resistansi suatu resistor
         dengan menafsirkan pita warna yang biasanya ditemukan pada badan resistor.
       </p>
     </div>
-
   </section>
 
   <section class="bg">
@@ -53,100 +55,167 @@
 
   <section class="about" id="about">
     <div class="about-text">
-      <span>About Us</span>
+      <h3>About Us</h3>
       <h2>Siapa Kami ?</h2>
-      <p>Perkenalkan kami dari kelompok 2 yang beranggotakan Nanda, Nayla, dan Zaky. 
-        Kami membuat Electronize untuk memudahkan proses penghitungan nilai resistor 
+      <p>Perkenalkan kami dari kelompok 2 yang beranggotakan Nanda, Nayla, dan Zaky.
+        Kami membuat Electronize untuk memudahkan proses penghitungan nilai resistor
         sesuai dengan pita yang tercantum pada resistor tersebut</p>
-      <a href="#" class="btn">Learn More</a>
     </div>
-    <div class="about-img">
-      <img src="img/logo.png">
+
+    <div class="menu-container">
+      <a href="https://www.instagram.com/ndz_ahmad/" target="_blank" class="about-box">
+        <div class="circle">
+          <img src="img/1_nanda.jpg">
+        </div>
+        <p>Halo sahabat 😁, kenalkan Aku Nanda Ahmad Zidan dari 1 D4 IT A dengan NRP 3123600013 <br><br>Pada website ini
+          saya
+          bertugas di bagian <strong><em>Web design</em></strong><br><br> Ingin kenal aku lebih jauh? <br> tekan saja
+          box-ku ini</p>
+      </a>
+      <a href="https://www.instagram.com/naylasin/" target="_blank" class="about-box">
+        <div class="circle">
+          <img src="img/2_nayla.jpg">
+        </div>
+        <p>Halo semuanya 🤗, perkenalkan Aku Nayla Herfiana Putri dari 1 D4 IT A dengan NRP 3123600015 <br><br>Pada
+          website ini saya
+          bertugas di bagian <strong><em>Wireframe <br> & Prototype</em></strong><br><br> Ingin kenal aku lebih jauh?
+          <br> tekan saja box-ku ini
+        </p>
+      </a>
+      <a href="https://www.instagram.com/mu.zack/" target="_blank" class="about-box">
+        <div class="circle">
+          <img src="img/3_zaky.jpg">
+        </div>
+        <p>Halo Rek 👋, kenalkan Aku Muhammad Zaky Mubarok dari 1 D4 IT A dengan NRP 3123600028 <br><br>Pada website ini
+          saya
+          bertugas di bagian <strong><em>UI & UX</em></strong><br><br> Ingin kenal aku lebih jauh? <br> tekan saja
+          box-ku ini</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="history" id="history">
+    <h3>For Your Information</h3>
+    <h2>Tahukah Kalian Sejarah<br>dari Resistor ?</h2>
+    <div class="history-text">
+      <div id="p1">
+        <p><strong id="bold0">Resistor</strong> merupakan alat yang sangat berguna di dunia teknologi saat ini. Cara kerja dari resistor sendiri
+          berlandaskan dengan hukum Ohm. Yakni hukum fisika mengenai hambatan listrik yang ditemukan oleh <strong>George Simon
+          Ohm</strong> (1789-1854). Ohm menggunakan sebuah prototype yang secara sederhana terdiri dari galvanometer, sebuah
+          sumber elektrik (air panas dan dingin), serta 2 buah kabel / lempengan logam yang berbeda (bismuth dan
+          tembaga).
+          <br><br>
+          Berdasarkan hasil tersebut terdapat hukum ohm yang menyatakan bahwa :<br>
+          <em style="color: #757575; font-weight: bold;">“Intensitas listrik (arus listrik) akan lebih besar jika menggunakan kabel yang lebih besar ketimbang kabel
+          yang lebih kecil dan juga intensitas tersebut akan lebih besar juga jika kabel tersebut lebih pendek ketimbang
+          yang panjang. Selain itu jenis kabel yang berbeda juga akan mempengaruhi besar intensitas listrik tersebut
+          dikarenakan suatu penghambat (resistant) tertentu”</em>
+          <br><br>
+          Dari situlah muncul istilah resistansi / hambatan muncul. Tidak lama dari itu beberapa ilmuwan lain
+          menggunakan dan mereplika percobaan Ohm, serta memperbaruinya. Di antara ilmuwan tersebut adalah Galvani dan
+          Ampere. Akibat merekalah akhirnya terbit suatu rumus yang kita kenal sekarang sebagai ohm’s law (dinamai
+          seperti itu karena dialah yang mendasari rumus tersebut)
+          <br><strong id="bold1">V = C/s * V.s/C</strong><br>
+          yang kemudian disempurnakan oleh Galvani dan Ampere menjadi :
+          <br><strong id="bold2">V = I * R</strong>
+          <br><br>
+          Pada saat itu kata voltase (V) sudah diketahui dan Ohm sendiri tidak mengetahui jikalau kata voltase diambil
+          dari
+          nama penemunya, yang dia tau itu hanyalah sebutan untuk tegangan/beda potensial listrik, begitu juga bagaimana
+          ia mengetahui tentang current (C) atau intensitas listrik merupakan ajaran dari ayahnya (Johann Wolfgang Ohm)
+          yang merupakan ahli reparasi gembok dan kunci di Universitas Goethe. Ia begitu gigih dan mau otodidak
+          mempelajari fisika, kimia dan matematika untuk diajarkannya kepada anaknya George S. Ohm.
+        </p>
+      </div>
+      <div id="img-ohm">
+        <a href="https://www.wikipedia.org/" id="img-link">
+                <img src="img/Ohm.png"></div>
+            </a>     
+      </div>
+    <br><br>
+    <div class="history-text">
+      <div id="img-res"><img src="img/resistor_dev.png"></div>
+      <div id="p2">
+        <p>Berangkat dari hukum ohm / ohm’s law itulah, banyak bermunculan bermacam tipe resistor/penghambat yang
+          diproduksi oleh para ilmuwan dan juga pengusaha komponen elektronik, yang padahal sebelumnya pengaturan
+          hambatan dilakukan dengan memanfaatkan panjang kawat atau tali logam dalam rangkaian. Contoh perkembangan
+          tersebut ialah Rheostat atau tipe resistor yang bisa diatur nilainya diciptakan oleh Sir Charles Wheatstone
+          pada tahun 1843. Kemudian 4 tahun setelahnya beberapa industri ada yang memproduksi resistor berbahan dasar
+          karbon, yakni perusahaan Siemens & Halske yang memperkenalkan kepada kita sistem penghitungan nilai hambatan
+          menggunakan warna pada pitanya.
+          <br><br>
+          Adapun dalam resistor karbon terdapat beberapa indikator/pita yang diberikan industri sebagai penanda untuk
+          menghitung nilai hambatan/resistan pada resistor tersebut. Berikut ini merupakan tipe-tipe resistor yang
+          berpita tersebut :
+        <ul class="rata-kiri">
+          <li>Resistor Berpita 4 (4-Band Resistor):</li>
+          <li class="no-list">&emsp;Resistor berpita 4 memiliki empat pita warna, yang menyediakan informasi tentang
+            nilai
+            hambatan dan toleransi. Tiga pita pertama menunjukkan nilai numerik dari hambatan, sementara pita keempat
+            menunjukkan toleransinya. Pita warna pertama dan kedua mewakili digit pertama dan kedua dari nilai hambatan
+            dalam kode warna. Pita warna ketiga menunjukkan faktor pengali atau jumlah nol tambahan dalam nilai
+            hambatan. Pita warna keempat adalah toleransi, yang menunjukkan batas toleransi hambatan resistor.</li><br>
+          <li>Resistor Berpita 5 (5-Band Resistor):</li>
+          <li class="no-list">&emsp;Resistor berpita 5, seperti namanya, memiliki lima pita warna. Selain menyediakan
+            informasi tentang nilai hambatan dan toleransi, pita warna tambahan pada resistor ini memberikan informasi
+            tentang koefisien temperatur. Tiga pita pertama tetap menunjukkan nilai hambatan, pita keempat menunjukkan
+            toleransi, dan pita kelima menunjukkan koefisien temperatur. Koefisien temperatur mengindikasikan bagaimana
+            nilai hambatan resistor akan berubah seiring perubahan suhu.</li><br>
+          <li>Resistor Berpita 6 (6-Band Resistor): </li>
+          <li class="no-list">&emsp;Resistor berpita 6, atau resistor presisi, memiliki dua pita tambahan dibandingkan
+            dengan
+            resistor berpita 5. Dua pita tambahan ini membawa informasi tambahan tentang nilai hambatan. Pita keenam
+            menunjukkan toleransi, sementara pita kelima memberikan informasi tambahan tentang nilai hambatan. Dengan
+            demikian, resistor berpita 6 memberikan tingkat presisi yang lebih tinggi karena memberikan detail yang
+            lebih rinci tentang nilai hambatan dibandingkan dengan resistor berpita 4 atau 5.</li>
+        </ul><br><br>
+        </p>
+        <p>
+          Kemudian seiring berkembangnya zaman dan berkembangnya komputer, resistor karbon mulai jarang diminati,
+          dikarenakan ukurannya yang terlalu besar dan pemasangannya hanya bisa pada papan sirkuit yang berlubang.
+          Sehingga akhirnya pada tahun 1960, perusahaan mancanegara yakni IBM (International Business Machines)
+          memproduksi “Thick Film Resistor & Thin Film Resistor” dan mengenalkan SMT (Surface-mount Technology),
+          perangkatnya dinamakan SMD (Surface-mount Device). Yang mana SMT merupakan metode pemasangan Thick/Thin film
+          resistor (dikenal juga sebagai SMD Resistor) pada PCB (Printed Circuit Board) secara langsung disolder, tanpa
+          harus melubangi papannya atau memotong lebihan kawat seperti pada resistor karbon.
+        </p><br><br>
+      </div>
     </div>
   </section>
 
   <section class="menu" id="menu">
     <div class="heading">
-      <span>Pilihan Menu</span>
+      <h3>Menu Option</h3>
       <h2>Kumpulan Kalkulator</h2>
-      <br>
-      <br>
     </div>
     <div class="menu-container">
-
-        <div id="gambar" onclick="applyEffect()">
-          <div class="box" onclick="loadLocalFile('resistor.html')">
-            <div class="box-img">
-              <img src="img/resistor1.png">
-            </div>
-            <h2>Resistor Pita 4</h2>
-          </div>
+      <a class="box" href="#I1" onclick="loadLocalFile('resistor.html')">
+        <div class="box-img">
+          <img src="img/resistor1.png">
         </div>
-      
-        <div id="gambar2" onclick="applyEffect2()">
-          <div class="box" onclick="loadLocalFile('resistor2.html')">
-            <div class="box-img">
-              <img src="img/resistor2.png">
-            </div>
-            <h2>Resistor Pita 5</h2>
-          </div>
+        <h2>Resistor Pita 4</h2>
+      </a>
+      <a class="box" href="#I1" onclick="loadLocalFile('resistor2.html')">
+        <div class="box-img">
+          <img src="img/resistor2.png">
         </div>
-
-        <div id="gambar3" onclick="applyEffect3()">
-          <div class="box" onclick="loadLocalFile('resistor3.html')">
-            <div class="box-img">
-              <img src="img/resistor3.png">
-            </div>
-            <h2>Resistor Pita 6</h2>
-          </div>
+        <h2>Resistor Pita 5</h2>
+      </a>
+      <a class="box" href="#I1" onclick="loadLocalFile('resistor3.html')">
+        <div class="box-img">
+          <img src="img/resistor3.png">
         </div>
-
+        <h2>Resistor Pita 6</h2>
+      </a>
     </div>
-
-    <script>
-      function applyEffect() {
-        var img = document.getElementById("gambar");
-        img.classList.add("clicked"); // Menambahkan kelas "clicked" untuk menerapkan efek
-        setTimeout(function() {
-          img.classList.remove("clicked"); // Menghapus kelas "clicked" setelah 0.3 detik
-        }, 300);
-      }
-      function applyEffect2() {
-        var img = document.getElementById("gambar2");
-        img.classList.add("clicked"); // Menambahkan kelas "clicked" untuk menerapkan efek
-        setTimeout(function() {
-          img.classList.remove("clicked"); // Menghapus kelas "clicked" setelah 0.3 detik
-        }, 300);
-      }
-      function applyEffect3() {
-        var img = document.getElementById("gambar3");
-        img.classList.add("clicked"); // Menambahkan kelas "clicked" untuk menerapkan efek
-        setTimeout(function() {
-          img.classList.remove("clicked"); // Menghapus kelas "clicked" setelah 0.3 detik
-        }, 300);
-      }
-    </script>
-
   </section>
 
-  <section class="display">
+  <section id="display">
     <h2>Tampilan</h2>
     <div class="ifr-container" id="div3">
       <iframe id="I1" src=""></iframe>
     </div>
   </section>
-
-  <script>
-    function loadLocalFile(fileName) {
-      var localFilePath = 'http://localhost/desain_web/project/FIX/' + fileName;
-      var iframe = $('#I1');
-
-iframe.fadeOut(300, function() {
-  iframe.attr('src', localFilePath);
-  iframe.fadeIn(300);
-});
-    }
-  </script>
 
   <section id="contact">
     <div class="footer">
@@ -156,39 +225,36 @@ iframe.fadeOut(300, function() {
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
+            <li><a href="#history">FYI</a></li>
             <li><a href="#menu">Our Products</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
         <div class="col">
-          <h4>Our Service</h4>
+          <h4>Information</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="/desain_web/projek 2/priv-pol.html">Privacy Policy</a></li>
+            <li><a href="/desain_web/projek%202/term-cons.html#">Terms & Conditions</a></li>
           </ul>
         </div>
 
         <div class="col">
-          <h4>Information</h4>
+          <h4>Call Us</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Delivery Information</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            <li><img src="img/home.png"><a href="https://maps.app.goo.gl/GvDZ2kB82fJWsAni8" target="_blank">Jl. Raya
+                ITS, Keputih, <br>Kec. Sukolilo, Kota Surabaya, <br>Jawa Timur, Indonesia. <br></a></li>
+            <li><img src="img/call.png"><a href="tel:085012345678">+62850-1234-5678</a></li>
           </ul>
         </div>
 
         <div class="col">
           <h4>Social Media</h4>
           <div class="social">
-            <a href="https://www.facebook.com"><img src="img/fb.png"></a>
-            <a href="https://www.instagram.com/alphalink_23/"><img src="img/ig.png"></a>
-            <a href="https://www.twitter.com"><img src="img/tw.png"></a>
-            <a href="https://www.youtube.com/@PENSTV"><img src="img/yt.png"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="img/fb.png"></a>
+            <a href="https://www.instagram.com/alphalink_23/" target="_blank"><img src="img/ig.png"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="img/tw.png"></a>
+            <a href="https://www.youtube.com/@PENSTV" target="_blank"><img src="img/yt.png"></a>
           </div>
         </div>
       </div>
@@ -196,6 +262,18 @@ iframe.fadeOut(300, function() {
     <p>&copy; 2023 Website WDW - Semua Hak Terjaga</p>
   </section>
 
+  <script>
+    function loadLocalFile(fileName) {
+      var localFilePath = 'FIX/' + fileName;
+      var iframe = $('#I1');
+      iframe.attr('src', localFilePath);
+    }
+    $(document).ready(function () {
+      $(".box").click(function () {
+        $("#display").show();
+      });
+    });
+  </script>
 </body>
 
 </html>
