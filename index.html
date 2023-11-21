@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/flyingIn.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <link rel="website icon" href="img/logo.png" type="png">
   <title>Website Kelompok 2</title>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
 
 </head>
 
@@ -41,7 +41,7 @@
     <div class="home-img">
       <img class="flyinganimated" src="img/pcb.png">
     </div>
-    <div class="home-text">
+    <div id="home-text" class="flyinganimated2">
       <h1>Apa itu <em>Electronize</em> ?</h1>
       <p>Electronize adalah sebuah website atau alat yang digunakan untuk menentukan nilai resistansi suatu resistor
         dengan menafsirkan pita warna yang biasanya ditemukan pada badan resistor.
@@ -53,7 +53,7 @@
     <img src="img/slime.png">
   </section>
 
-  <section class="about" id="about">
+  <section class="start" id="about">
     <div class="about-text">
       <h3>About Us</h3>
       <h2>Siapa Kami ?</h2>
@@ -94,32 +94,38 @@
     </div>
   </section>
 
-  <section class="history" id="history">
+  <section class="start" id="history">
     <h3>For Your Information</h3>
     <h2>Tahukah Kalian Sejarah<br>dari Resistor ?</h2>
     <div class="history-text">
       <div id="p1">
-        <p><strong id="bold0">Resistor</strong> merupakan alat yang sangat berguna di dunia teknologi saat ini. Cara kerja dari resistor sendiri
-          berlandaskan dengan hukum Ohm. Yakni hukum fisika mengenai hambatan listrik yang ditemukan oleh <strong>George Simon
-          Ohm</strong> (1789-1854). Ohm menggunakan sebuah prototype yang secara sederhana terdiri dari galvanometer, sebuah
+        <p><strong id="bold0">Resistor</strong> merupakan alat yang sangat berguna di dunia teknologi saat ini. Cara
+          kerja dari resistor sendiri
+          berlandaskan dengan hukum Ohm. Yakni hukum fisika mengenai hambatan listrik yang ditemukan oleh <strong>George
+            Simon
+            Ohm</strong> (1789-1854). Ohm menggunakan sebuah prototype yang secara sederhana terdiri dari galvanometer,
+          sebuah
           sumber elektrik (air panas dan dingin), serta 2 buah kabel / lempengan logam yang berbeda (bismuth dan
           tembaga).
           <br><br>
           Berdasarkan hasil tersebut terdapat hukum ohm yang menyatakan bahwa :<br>
-          <em style="color: #757575; font-weight: bold;">“Intensitas listrik (arus listrik) akan lebih besar jika menggunakan kabel yang lebih besar ketimbang kabel
-          yang lebih kecil dan juga intensitas tersebut akan lebih besar juga jika kabel tersebut lebih pendek ketimbang
-          yang panjang. Selain itu jenis kabel yang berbeda juga akan mempengaruhi besar intensitas listrik tersebut
-          dikarenakan suatu penghambat (resistant) tertentu”</em>
+          <em style="color: #757575; font-weight: bold;">“Intensitas listrik (arus listrik) akan lebih besar jika
+            menggunakan kabel yang lebih besar ketimbang kabel
+            yang lebih kecil dan juga intensitas tersebut akan lebih besar juga jika kabel tersebut lebih pendek
+            ketimbang
+            yang panjang. Selain itu jenis kabel yang berbeda juga akan mempengaruhi besar intensitas listrik tersebut
+            dikarenakan suatu penghambat (resistant) tertentu”</em>
           <br><br>
           Dari situlah muncul istilah resistansi / hambatan muncul. Tidak lama dari itu beberapa ilmuwan lain
           menggunakan dan mereplika percobaan Ohm, serta memperbaruinya. Di antara ilmuwan tersebut adalah Galvani dan
           Ampere. Akibat merekalah akhirnya terbit suatu rumus yang kita kenal sekarang sebagai ohm’s law (dinamai
           seperti itu karena dialah yang mendasari rumus tersebut)
-          <br><strong id="bold1">V = C/s * V.s/C</strong><br>
-          yang kemudian disempurnakan oleh Galvani dan Ampere menjadi :
-          <br><strong id="bold2">V = I * R</strong>
-          <br><br>
-          Pada saat itu kata voltase (V) sudah diketahui dan Ohm sendiri tidak mengetahui jikalau kata voltase diambil
+        </p>
+        <br><a class="bold1" href="https://www.facebook.com" target="_blank">V = C/s * V.s/C</a><br><br>
+        <p>yang kemudian disempurnakan oleh Galvani dan Ampere menjadi :</p>
+        <br><a class="bold2" href="https://www.facebook.com" target="_blank">V = I * R</a>
+        <br><br>
+        <p>Pada saat itu kata voltase (V) sudah diketahui dan Ohm sendiri tidak mengetahui jikalau kata voltase diambil
           dari
           nama penemunya, yang dia tau itu hanyalah sebutan untuk tegangan/beda potensial listrik, begitu juga bagaimana
           ia mengetahui tentang current (C) atau intensitas listrik merupakan ajaran dari ayahnya (Johann Wolfgang Ohm)
@@ -127,14 +133,12 @@
           mempelajari fisika, kimia dan matematika untuk diajarkannya kepada anaknya George S. Ohm.
         </p>
       </div>
-      <div id="img-ohm">
-        <a href="https://www.wikipedia.org/" id="img-link">
-                <img src="img/Ohm.png"></div>
-            </a>     
+      <div id="img-ohm"><img id="ohm" src="img/Ohm.png" alt="Gambar George S. Ohm bereksperimen dengan aparatusnya">
       </div>
-    <br><br>
+    </div><br><br>
     <div class="history-text">
-      <div id="img-res"><img src="img/resistor_dev.png"></div>
+      <div id="img-res"><img id="res-dev" src="img/resistor_dev.png"
+          alt="Gambar Perkembangan resistor dari tahun 1843 hingga 1960"></div>
       <div id="p2">
         <p>Berangkat dari hukum ohm / ohm’s law itulah, banyak bermunculan bermacam tipe resistor/penghambat yang
           diproduksi oleh para ilmuwan dan juga pengusaha komponen elektronik, yang padahal sebelumnya pengaturan
@@ -182,13 +186,18 @@
       </div>
     </div>
   </section>
-
-  <section class="menu" id="menu">
-    <div class="heading">
+  <div id="myModal" class="modal">
+    <span class="close2">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <section id="menu">
+    <div id="heading">
       <h3>Menu Option</h3>
       <h2>Kumpulan Kalkulator</h2>
+      <h4>Pilih jenis kalkulator berdasarkan jumlah pita resistor yang Anda punyai !</h4>
     </div>
-    <div class="menu-container">
+    <div id="menu-container">
       <a class="box" href="#I1" onclick="loadLocalFile('resistor.html')">
         <div class="box-img">
           <img src="img/resistor1.png">
@@ -212,7 +221,8 @@
 
   <section id="display">
     <h2>Tampilan</h2>
-    <div class="ifr-container" id="div3">
+    <div class="ifr-container">
+      <a href="#menu" class="close">&times;</a>
       <iframe id="I1" src=""></iframe>
     </div>
   </section>
@@ -273,6 +283,38 @@
         $("#display").show();
       });
     });
+    $(document).ready(function () {
+      $(".close").click(function () {
+        $("#display").hide();
+      });
+    });
+  </script>
+  <script>
+    var modal = document.getElementById("myModal");
+
+    var img = document.getElementById("ohm");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    var img = document.getElementById("res-dev");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    var span = document.getElementsByClassName("close2")[0];
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
   </script>
 </body>
 
